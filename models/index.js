@@ -1,4 +1,4 @@
-const User = require('./userUser');
+const User = require('./user');
 const Post = require('./post');
 const Comment = require('./comment');
 // Define the associations between the models
