@@ -2,26 +2,26 @@ const { Post } = require("../models");
 
 const postData = [
   {
-    title: "Hiking party in the Everglades",
+    title: "Coding is so difficult!",
     post_text:
-      "On August 31st I will be taking a stroll in the Everglades if anyone would like to join me?",
+      "Why is this project so complicated?!",
     user_id: 1,
   },
   {
-    title: "Best scenic hikes in Florida",
-    post_text: "I'm curious about what the best scenic hikes are in Florida. Everyone says the Everglades, but what do you think? ",
+    title: "I love computers and gaming.",
+    post_text: "Still looking for the perfect console but handhelds are my weakness.",
     user_id: 3,
   },
   {
-    title: "Solo traveler in Florida",
+    title: "Instagram",
     post_text:
-      "I am new to Florida and would like to meet new people. I am going for a hike at Highlands Hammock State Park soon. Would anyone want to join me?",
+      "How do I post multiple photos at the same time on Instagram?",
     user_id: 2,
   },
   {
-    title: "Advanced hiker looking for someone to join.",
+    title: "Vs Code is a masterpiece of a software.",
     post_text:
-      "The Myakka Hiking Trail is one of the longest trails in Florida, and I would like to have a partner to join me. Any takers?",
+      "Javascript is boss!",
     user_id: 4,
   },
 ];
