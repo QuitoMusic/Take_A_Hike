@@ -4,8 +4,9 @@
   "description": "Social hiking geometrics blog",
   "main": "apiTest.js",
   "scripts": {
-    "test": "node server.js",
-    "start": "node server.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seeds": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
