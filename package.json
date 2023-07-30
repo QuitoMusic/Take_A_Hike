@@ -1,26 +1,35 @@
 {
-  "name": "Take_A_Hike",
+  "name": "take_a_hike",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Social hiking geometrics blog",
+  "main": "apiTest.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "nodemon server.js",
-    "seed": "node seeds/index.js"
+    "test": "node server.js",
+    "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "Take_A_Hike"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Francisco Gonzalez, Laryn Myrick, Amazing Grace, Alexis Vasquez and Mijan Ramharrack.",
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.4.0",
-    "bcrypt": "^5.0.0",
-    "connect-session-sequelize": "^7.0.4",
-    "dotenv": "^8.6.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^5.2.0",
-    "express-session": "^1.17.1",
-    "mysql2": "^2.2.5",
-    "sequelize": "^6.3.5"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.6"
+    "bcryptjs": "^2.4.3",
+    "connect-session-sequelize": "^7.1.7",
+    "cookies": "^0.8.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.0",
+    "express-session": "^1.17.3",
+    "express-validator": "^7.0.1",
+    "moment": "^2.29.4",
+    "momentjs": "^2.0.0",
+    "mysql2": "^3.5.2",
+    "nodemon": "^3.0.1",
+    "sequelize": "^6.32.1"
   }
 }

@@ -1,9 +1,8 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connections');
+const sequelize = require('../config/connection');
 
 
 class Post extends Model {}
-
 // Initialize the Post model with its attributes and options
 Post.init(
     {
@@ -13,7 +12,6 @@ Post.init(
             primaryKey: true,
             autoIncrement: true
         },
-
         title: {
             type: DataTypes.STRING,
             allowNull: false

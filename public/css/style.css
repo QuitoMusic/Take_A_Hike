@@ -1,0 +1,255 @@
+/* General styles */
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black; 
+}
+body{
+  background-image: url('/public/css/images/wp1903457-hiking-wallpapers.jpg'); 
+}
+
+/* Links */
+a {
+  position: relative;
+  text-decoration: none;
+  color: black; 
+  font-weight: bold;
+  font-size: 20px; 
+  transition: color .1s;
+}
+
+/* Buttons */
+button {
+  background-color: #225ca3; 
+  border: 0;
+  padding: 16px; 
+  color: white;
+  font-weight: bold;
+  transition: background-color .1s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Form elements */
+textarea {
+  min-width: 640px; 
+  min-height: 100px;
+}
+
+
+header {
+  border-bottom: 1px solid #327124; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px; 
+  background-color: #225ca3; 
+  height: 150px;
+}
+
+#titleHeader {
+  font-size: 100px; 
+  color: white;
+}
+
+#postListtitle{
+  font-size: 30px;
+}
+
+/* Navigation */
+.homeNav {
+  position: relative;
+  right: 192px; 
+  top: 25px;
+}
+
+.dashboardNav {
+  position: relative;
+  right: 192px; 
+  top: 25px;
+}
+
+nav {
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  color: black; 
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+
+.loginFormbtn {
+  margin-bottom: 10px;
+  width: 200px;
+  background-color: #225ca3; 
+}
+
+#dashboardLink {
+  margin-left: 40px;
+}
+
+#dashboardLink, #homeLink, .logoutBtn{
+  color: white;
+}
+
+.logoutBtn {
+  font-size: 20px; 
+  font-weight: bold;
+  margin-left: 16px; 
+  background-color: #225ca3; 
+}
+
+.postList{
+  list-style: none;
+}
+
+/* Posts and comments */
+#postTitle {
+  margin-bottom: 32px; 
+  line-height: 150%;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  padding: 5px;
+  width: 640px;
+}
+
+.post{
+  margin-bottom: 15px; 
+  line-height: 150%;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  padding: 5px;
+  width: 1200px;
+}
+
+.aboutMepost{
+  margin-bottom: 32px; 
+  line-height: 150%;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  padding: 5px;
+  width: 590px;
+}
+
+#postText, #commentBody{
+  line-height: 150%;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  padding: 5px;
+}
+
+#passwordLogin , #emailLogin{
+margin-bottom: 10px;
+width: 190px;
+line-height: 150%;
+border-style: solid;
+border-radius: 10px;
+border-width: 1px;
+padding: 5px;
+}
+
+.saveDeletebtns{
+  margin-bottom: 32px; 
+  background-color: #225ca3; 
+}
+
+.post .title {
+  font-size: 20px; 
+}
+
+.post .title span {
+  font-size: 15px; 
+}
+
+.comment .meta {
+  font-size: 90%;
+  margin-bottom: 8px; 
+  opacity: .6;
+}
+
+.comment {
+  padding: 16px; 
+  margin-bottom: 16px; 
+  background-color: #225ca313;
+  border-radius: 20px;
+}
+
+#addCommentbtn{
+  margin-bottom: 30px;
+}
+
+
+
+.signupLink {
+  position: relative;
+  left: 80px;
+  top: -10px;
+}
+
+form label {
+  display: block;
+}
+
+
+#login {
+  position: relative;
+  top: 25px;
+  right: 40px;
+}
+
+#loginLink {
+  margin-right: 40px;
+  margin-left: 40px;
+ color: white;
+}
+
+
+main {
+  flex: 1;
+  padding: 32px 64px; 
+}
+
+/* Layout */
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 20px; 
+}
+
+.aboutMe {
+  flex: 50%;
+  padding: 20px; 
+  position: relative;
+  top: 70px;
+}
+
+#editUserLink{
+  position: relative;
+  left: 550px;
+}
+
+#usernameSignup, #emailSignup, #passwordSignup{
+  line-height: 150%;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#loginLinkSU{
+  position: relative;
+  left: 100px;
+  bottom: 32px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Take a Hike Blog</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>
+        <a id= "titleHeader" href="/">Take a Hike Blog</a>
+      </h1>
+        <nav>
+          <span><a  href="/" id="homeLink">Home</a></span> 
+          {{#if loggedIn}}
+          <a id="dashboardLink" href="/dashboard">Dashboard</a>
+          <button id="logout" class="logoutBtn">Logout</button>
+          {{else}}
+          <a id="loginLink" href="/login">Login</a>
+          {{/if}}
+        </nav>
+    </header>
+    <main>
+      {{{ body }}}
+    </main>
+  </div>
+
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+
+</body>
+
+</html>
