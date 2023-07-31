@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Take a Hike Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -12,7 +16,7 @@
   <div class="wrapper">
     <header>
       <h1>
-        <a id= "titleHeader" href="/">Take a Hike Blog</a>
+        <a id= "titleHeader" href="/">Take a Hike</a>
       </h1>
         <nav>
           <span><a  href="/" id="homeLink">Home</a></span> 
@@ -28,6 +32,16 @@
       {{{ body }}}
     </main>
   </div>
+
+  <footer class="footer">
+      <p>
+        <strong>Take A Hike.</strong><a href="https://github.com/QuitoMusic/Take_A_Hike/graphs/contributors"> By Francisco Gonzalez, Laryn Myrick, Amazing Grace, Alexis Vasquez ad, Mijan Ramharrack
+        </a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+Contribute to QuitoMusic/Take_A_Hike development by creating an account on GitHub. (40 kB)
+      </p>
+</footer>
 
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
