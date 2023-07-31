@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "seeds": "node seeds/index.js"
+    "seeds": "node seeds/index.js",
+    "watch": "node server.js"
   },
   "repository": {
     "type": "git",
