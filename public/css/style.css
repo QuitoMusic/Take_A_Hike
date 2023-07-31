@@ -7,7 +7,9 @@ body, html {
   color: black; 
 }
 body{
-  background-image: url('/public/css/images/wp1903457-hiking-wallpapers.jpg'); 
+  background-image: url('./images/hiking_background.jpg');
+  background-attachment: fixed; 
+  background-size: cover;
 }
 
 /* Links */
@@ -22,15 +24,22 @@ a {
 
 /* Buttons */
 button {
-  background-color: #225ca3; 
+  background-color: rgba(0, 44, 0, 0.827); 
   border: 0;
   padding: 16px; 
   color: white;
   font-weight: bold;
-  transition: background-color .1s;
   cursor: pointer;
   border-radius: 5px;
+  opacity: 100%; 
+  transition: background-color 0.4s ease-in-out
 }
+
+button:hover {
+  background-color: rgba(27, 158, 27, 0.827); 
+  opacity: 1;
+}
+
 
 /* Form elements */
 textarea {
@@ -40,22 +49,32 @@ textarea {
 
 
 header {
-  border-bottom: 1px solid #327124; 
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 16px; 
-  background-color: #225ca3; 
+  background-color: rgba(0, 44, 0, 0.827); 
   height: 150px;
 }
 
 #titleHeader {
+  font-family: 'Leckerli One', cursive;
   font-size: 100px; 
   color: white;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.778);
 }
 
 #postListtitle{
-  font-size: 30px;
+  height: 100%;
+  display: flex;
+  position: relative;
+  bottom: 35px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Leckerli One', cursive;
+  color: white;
+  font-size: 70px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.877);
 }
 
 /* Navigation */
@@ -85,7 +104,7 @@ nav {
 .loginFormbtn {
   margin-bottom: 10px;
   width: 200px;
-  background-color: #225ca3; 
+  background-color: rgba(0, 44, 0, 0.827); 
 }
 
 #dashboardLink {
@@ -100,7 +119,7 @@ nav {
   font-size: 20px; 
   font-weight: bold;
   margin-left: 16px; 
-  background-color: #225ca3; 
+  background-color: rgba(0, 44, 0, 0.827); 
 }
 
 .postList{
@@ -108,24 +127,62 @@ nav {
 }
 
 /* Posts and comments */
+
 #postTitle {
+  position: relative;
+  left: 10px;
   margin-bottom: 32px; 
   line-height: 150%;
-  border-style: solid;
-  border-radius: 10px;
-  border-width: 1px;
-  padding: 5px;
+  padding: 2px;
   width: 640px;
 }
+.box{
+  background-color: rgba(255, 255, 255, 0.852);
+  margin-bottom: 25px; 
+  line-height: 200%;
+  width: 1300px;
+  padding: 0px;
+  position: relative;
+  bottom: 30px;
+}
 
-.post{
-  margin-bottom: 15px; 
-  line-height: 150%;
-  border-style: solid;
-  border-radius: 10px;
-  border-width: 1px;
-  padding: 5px;
-  width: 1200px;
+.title{
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(0, 44, 0, 0.827); 
+  line-height: 30px;
+  font-size: 15px;
+  font-style: italic;
+  padding: 0px;
+}
+
+.postTitle{
+  font-family: 'Leckerli One', cursive;
+  font-size: 30px;
+  color: white;
+  font-style: normal;
+  padding: 10px;
+  position: relative;
+  top: 10px;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.postTitle:hover{
+  color: white;
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+.postComments{
+  position:relative;
+  left: 1200px;
+  color:white;
+}
+
+.content{
+  position:relative;
+  left: 30px;
+  bottom: 10px;
+  color: black;
 }
 
 .aboutMepost{
@@ -158,7 +215,7 @@ padding: 5px;
 
 .saveDeletebtns{
   margin-bottom: 32px; 
-  background-color: #225ca3; 
+  background-color: rgba(0, 44, 0, 0.827); 
 }
 
 .post .title {
@@ -178,12 +235,17 @@ padding: 5px;
 .comment {
   padding: 16px; 
   margin-bottom: 16px; 
-  background-color: #225ca313;
+  background-color: #ffffffd7;
   border-radius: 20px;
 }
 
 #addCommentbtn{
   margin-bottom: 30px;
+  box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.425);
+}
+
+.btn{
+  box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.425);
 }
 
 
