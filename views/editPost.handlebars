@@ -1,5 +1,5 @@
 <article>
-  <h2>
+  <h2 class="editPosttitles">
     Edit Post
   </h2>
   <form class="editPostform">
@@ -9,10 +9,10 @@
     <div>
       <textarea id="postText" name="postText">{{post.post_text}}</textarea>
     </div>
-    <div>
+    <div class="editPosttitles">
       Posted by you on {{format_date post.created_at}}
       |
-      <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
+      <a class="editPosttitles" href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
     </div>
     <button class="saveDeletebtns" type="submit">Save</button>
     <button type="button" class="deletePostbtn">Delete</button>
@@ -25,7 +25,7 @@
   </div>
 
   <div>
-    <button type="submit">Add comment</button>
+    <button id="addCommentbtn" type="submit">Add comment</button>
   </div>
 </form>
 

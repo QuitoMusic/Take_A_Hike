@@ -1,19 +1,19 @@
-<article>
-  <h2>
+<article id="updateUser">
+  <h2 id="updateUsertitle">
     Update My Information
   </h2>
   <form class="editUserform">
     <div>
-      <label for="userName">User Name</label>
-      <input name="user-Name" type="text" value="{{user.username}}" />
+      <label class="updateUser" for="userName">User Name</label>
+      <input class="updateInput" name="user-Name" type="text" value="{{user.username}}" />
     </div>
     <div>
-      <label for="email">Email</label>
-      <input name="email" value="{{user.email}}" />
+      <label class="updateUser" for="email">Email</label>
+      <input class="updateInput" name="email" value="{{user.email}}" />
     </div>
      <div>
-      <label for="password">Password</label>         
-      <input type="password" name="password" />
+      <label class="updateUser" for="password">Password</label>         
+      <input class="updateInput" type="password" name="password" />
     </div>
     <div>
       <input type="hidden" id="userId" name="userId" value={{user.id}} />
