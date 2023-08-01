@@ -1,18 +1,20 @@
 <section class="row">
   <div class = "column">
+    <div id="dashboardIntro">
     <h1>Welcome your Hiking Dashboard!</h1>
-    <h2>Create New Post</h2>
+    <h2>Create New Post:</h2>
+    </div>
 
     <form class="newPostform">
       <div>
-        <label for="postTitle">Title</label>
+        <label class="postInput" for="postTitle">Title:</label>
         <input type="text" id="postTitle" name="postTitle" />
       </div>
       <div>
-        <label for="postText">Text</label>
+        <label class="postInput" for="postText">Text:</label>
         <textarea id="postText" name="postText"></textarea>
       </div>
-      <button type="submit" class="btn">Create</button>
+      <button type="submit" class="btn">Create New Post</button>
     </form>
   </div>
   <div class = "aboutMe">
@@ -23,12 +25,12 @@
 </section>
 {{#if posts.length}}
 <section>
-  <h2>Your Thoughts</h2>
+  <h2 id="userPostsection">Your Thoughts:</h2>
   <ol>
     {{#each posts as |post|}}
     <li>
       {{> postInformation post}}
-      <a href="/dashboard/edit/{{post.id}}">Edit Comment</a>
+      <a id="editPostlink" href="/dashboard/edit/{{post.id}}">Edit Post</a>
     </li>
     {{/each}}
   </ol>
