@@ -18,24 +18,25 @@
       <h1>
         <a id= "titleHeader" href="/">Take a Hike</a>
       </h1>
-        <nav>
-          <span><a  href="/" id="homeLink">Home</a></span> 
-          {{#if loggedIn}}
-          <a id="dashboardLink" href="/dashboard">Dashboard</a>
-          <button id="logout" class="logoutBtn">Logout</button>
-          {{else}}
-          <a id="loginLink" href="/login">Login</a>
-          {{/if}}
-        </nav>
+      <nav>
+        <span><a  href="/" id="homeLink">Home</a></span> 
+        {{#if loggedIn}}
+        <a id="dashboardLink" href="/dashboard">Dashboard</a>
+        <button id="logout" class="logoutBtn">Logout</button>
+        {{else}}
+        <a id="loginLink" href="/login">Login</a>
+        {{/if}}
+      </nav>
     </header>
     <main>
       {{{ body }}}
     </main>
   </div>
 
-{{> footer}}
+  {{> footer}}
 
   {{#if loggedIn}}
+  <script src="/js/getAddresses.js"></script>
   <script src="/js/logout.js"></script>
   {{/if}}
 
