@@ -6,6 +6,16 @@
     </div>
 
     <form class="newPostform">
+            {{#if loggedIn}}
+      <div>
+        <h2>Select Address:</h2>
+        <select id="addressDropdown">
+          {{#each addresses}}
+          <option value="{{ this.id }}">{{ this.name }}</option>
+          {{/each}}
+        </select>
+      </div>
+      {{/if}}
       <div>
         <label class="postInput" for="postTitle">Title:</label>
         <input type="text" id="postTitle" name="postTitle" />
@@ -37,4 +47,5 @@
 </section>
 {{/if}}
 
+<script src="/js/getAddresses.js"></script>
 <script src="/js/addPost.js"></script>
