@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-const { Address } = require('./addresses');
+
 
 class Post extends Model {}
 // Initialize the Post model with its attributes and options
@@ -23,20 +23,16 @@ Post.init(
         len: [1],
       },
     },
+    address: {
+      type: DataTypes.STRING
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'user',
         key: 'id',
       },
-    },
-    address_id: { // Fixed typo here (comma was missing)
-      type: DataTypes.INTEGER,
-      references: {
-        model: Address,
-        key: 'id',
-      },
-    },
+    }
   },
   {
     // Provide the sequelize connection

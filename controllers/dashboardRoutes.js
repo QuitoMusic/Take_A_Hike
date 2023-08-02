@@ -1,13 +1,16 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Post, User, Comment } = require('../models');
+const { Post, User, Comment, Address } = require('../models');
+
 const withAuth = require('../utils/auth')
 
 // Route to display the dashboard with user's posts and associated comments
 router.get('/', withAuth, (req, res) => {
+
+
   Post.findAll({
     where: {
-      user_id: req.session.user_id 
+      user_id: req.session.user_id
     },
     attributes: [
       'id',
@@ -31,8 +34,12 @@ router.get('/', withAuth, (req, res) => {
     ]
   })
     .then(dbPostData => {
-      const posts = dbPostData.map(post => post.get({ plain: true }));
-      res.render('dashboard', { posts, loggedIn: true });
+      Address.findAll().then((addressData) => {
+        const addresses = addressData.map(address => address.get({ plain: true }));
+        const posts = dbPostData.map(post => post.get({ plain: true }));
+        console.log(addresses);
+        res.render('dashboard', { posts, addresses, loggedIn: true });
+      })
     })
     .catch(err => {
       console.log(err);
@@ -44,7 +51,7 @@ router.get('/', withAuth, (req, res) => {
 router.get('/edit/:id', withAuth, (req, res) => {
   Post.findOne({
     where: {
-      id: req.params.id 
+      id: req.params.id
     },
     attributes: [
       'id',
@@ -87,11 +94,11 @@ router.get('/editUser', withAuth, (req, res) => {
   User.findOne({
     attributes: { exclude: ['password'] },
     where: {
-      id: req.session.user_id 
+      id: req.session.user_id
     }
   })
     .then(dbUserData => {
-      
+
       if (!dbUserData) {
         res.status(404).json({ message: 'Invalid user id' });
         return;

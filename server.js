@@ -6,20 +6,19 @@ const exphbs = require('express-handlebars');
 const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const helpers = require('./utils/helpers');
-require('dotenv').config();
 
 // Create an instance of handlebars with custom helpers 
 const hbs = exphbs.create({ helpers });
 
 // Configure session settings
 const sess = {
-    secret: "Super secret secret", 
-    cookie: { maxAge: 7200000 }, 
-    resave: false, 
-    saveUninitialized: true,
-    store: new SequelizeStore({
-        db: sequelize 
-    })
+  secret: "Super secret secret",
+  cookie: { maxAge: 7200000 },
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize
+  })
 };
 
 
@@ -43,6 +42,7 @@ app.use(routes);
 
 // Sync the Sequelize models and start server port
 sequelize.sync({ force: false }).then(() => {
-app.listen(PORT, () => {
-  console.log(`Server started on port ${PORT}`)});
+  app.listen(PORT, () => {
+    console.log(`Server started on port ${PORT}`)
+  });
 });
