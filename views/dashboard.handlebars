@@ -8,7 +8,7 @@
     <form class="newPostform">
             {{#if loggedIn}}
       <div>
-        <h2>Select Address:</h2>
+        <h2 class="postInput">Select Address:</h2>
         <select id="addressDropdown">
           {{#each addresses}}
           <option value="{{ this.id }}">{{ this.name }}</option>
