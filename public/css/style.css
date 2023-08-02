@@ -114,6 +114,7 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.877);
   font-size: 40px;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.877);
+  width: 700px;
 }
 
 .dashboardNav {
@@ -349,7 +350,7 @@ text-shadow: 0px 5px 5px rgb(0, 0, 0);
 #editPostlink{
   position: relative;
   left: 1200px;
-  bottom: 40px;
+  bottom: 10px;
   font-family: 'Leckerli One', cursive;
 font-size: 25px;
 color: white;
