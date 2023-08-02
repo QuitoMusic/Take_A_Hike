@@ -2,7 +2,7 @@
 const User = require('./User');
 const Post = require('./Post');
 const Comment = require('./comment');
-const { Address } = require('../models');
+const Address = require('./addresses');
 
 // Define the associations between the models
 User.hasMany(Post, {
@@ -43,5 +43,5 @@ Post.hasMany(Comment, {
 });
 
 //Export models consolidated in the current file//
-module.exports = { User, Post, Comment };
+module.exports = { User, Post, Comment, Address };
 
