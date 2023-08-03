@@ -5,19 +5,19 @@
   <form class="editUserform">
     <div>
       <label class="updateUser" for="userName">User Name</label>
-      <input class="updateInput" name="user-Name" type="text" value="{{user.username}}" />
+      <input class="updateInput" name="userName" type="text" value="{{user.username}}" />
     </div>
     <div>
       <label class="updateUser" for="email">Email</label>
       <input class="updateInput" name="email" value="{{user.email}}" />
     </div>
-     <div>
-      <label class="updateUser" for="password">Password</label>         
+    <div>
+      <label class="updateUser" for="password">Password</label>
       <input class="updateInput" type="password" name="password" />
     </div>
     <div>
-      <input type="hidden" id="userId" name="userId" value={{user.id}} />
-    </div>   
+      <input type="hidden" id="userId" name="userId" value="{{user.id}}" />
+    </div>
     <button type="submit">Update</button>
   </form>
 </article>

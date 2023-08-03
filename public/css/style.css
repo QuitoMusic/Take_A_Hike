@@ -588,6 +588,11 @@ main {
   left: 950px;
   bottom: 50px;
   border-radius: 20px;
-  filter: brightness(70%);
+  filter: brightness(80%);
   box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.425);
+}
+
+#mapRendered:hover{
+  filter: brightness(100%);
+  transition: brightness 3s ease;
 }
