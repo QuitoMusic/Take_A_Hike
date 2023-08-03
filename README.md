@@ -64,11 +64,8 @@ To test the application and make sure the data is being passed to the correct en
 # d. Comment Page ![Alt text](public/images/Screenshots/Comment.png)
 # e. Update Information Page ![Alt text](public/images/Screenshots/UpdateInformation.png)
 # f. Create New Post Page ![Alt text](public/images/Screenshots/CreateNewPost.png)
-
-
-
-
-
+ 
+ 
 ## Refferences
 
 
