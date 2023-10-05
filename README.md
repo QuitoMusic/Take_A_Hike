@@ -6,6 +6,7 @@
 
 ## Table of Contents
 - [Description](#description)
+- [Heroku Deployment](#heroku)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -18,7 +19,9 @@
 
 Take A Hike is a vibrant social platform connecting hikers of all backgrounds, fostering a community that celebrates the spirit of wanderlust, sharing personal journeys, and inspiring others to explore the boundless beauty of our planet's natural landscapes. Users can discover, organize, and join local and global hiking events, creating lasting connections with like-minded outdoor enthusiasts, and promoting an active lifestyle while fostering environmental awareness.
 
+## Heroku Deployment
 
+Deployed App: https://take-a-hike-quito-2bdfd3666c8e.herokuapp.com/
 
 ## Installation
 
@@ -58,12 +61,12 @@ To test the application and make sure the data is being passed to the correct en
 # Screenshots
 
 ## Next screenshots will create understanding of the website's functionality.
-# a. Homepage ![Alt text](<public/images/HomePage (1).png>)
-# b. Login Page![Alt text](public/images/Screenshots/Login.png)
-# c. Sign Up Page ![Alt text](public/images/Screenshots/signup.png)
-# d. Comment Page ![Alt text](public/images/Screenshots/Comment.png)
-# e. Update Information Page ![Alt text](public/images/Screenshots/UpdateInformation.png)
-# f. Create New Post Page ![Alt text](public/images/Screenshots/CreateNewPost.png)
+# a. Homepage ![HP](<public/images/HomePage (1).png>)
+# b. Login Page![Login](public/images/Screenshots/Login.png)
+# c. Sign Up Page ![Signup](public/images/Screenshots/signup.png)
+# d. Comment Page ![comment](public/images/Screenshots/Comment.png)
+# e. Update Information Page ![update inforamtion](public/images/Screenshots/UpdateInformation.png)
+# f. Create New Post Page ![new post](public/images/Screenshots/CreateNewPost.png)
  
  
 ## Refferences
