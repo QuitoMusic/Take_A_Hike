@@ -9,13 +9,16 @@
     <div>
       <textarea id="postText" name="postText">{{post.post_text}}</textarea>
     </div>
-    <div class="editPosttitles">
-      Posted by you on {{format_date post.created_at}}
-      |
+    <div class="postEditinfo">
+      | Posted by you on {{format_date post.created_at}}
+     |&nbsp;<br/> 
       <a id="editPosttitles" href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
     </div>
-    <button class="saveDeletebtns" type="submit">Save</button>
-    <button type="button" class="deletePostbtn">Delete</button>
+    <div class="saveDeletebtns">
+       <button  class="saveDeletebtns" id="saveBtn" type="submit">Save</button>
+    <button class="deletePostbtn" type="button">Delete</button>
+    
+</div> 
   </form>
 </article>
 
