@@ -15,11 +15,10 @@ main {
 
 header {
   background-color: rgba(0, 44, 0, 0.827); 
-  height: 100px;
+  height: 90px;
 }
 
 #titleHeader {
-  position: relative;
   display: flex;
   left: 30px;
   top: 10px;
@@ -86,10 +85,10 @@ button:hover {
     filter: invert(1);
     opacity: 40%;
     position: absolute;
-    left: 118px;
+    left: 92px;
     top: 5px;
-    width:100px; 
-    height: 90px; 
+    width:90px; 
+    height: 80px; 
     background-image: url('/images/hikingLogo.png'); 
     background-size: cover; 
   }
@@ -271,11 +270,6 @@ button:hover {
   background-color: rgba(0, 44, 0, 0.827); 
   box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.425);
 }
-
-
-
-
-
 
 #content{
   color: white;
@@ -579,11 +573,6 @@ font-size: 20px;
     }
 
     
-/* vvvvvvvvvv√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√√3jn fkcerjfvoejrf */
-
-
-
-
 .footerLinks{
   color:white;
   font-size: 12px;
@@ -594,35 +583,43 @@ font-size: 20px;
   text-shadow: 0px 2px 5px rgb(255, 255, 255);
 }
 
-
-
 @media (max-width: 768px) {
   header {
     height: 130px;
   }
 
   .image-container {
-    left: 140px;
-    width:100px; 
-    height: 90px; 
+    left: 163px;
+    top: 25px;
+    width:65px; 
+    height: 60px; 
   }
 
-  #titleHeader {
-    top: 30px;
-    left: 110px;
-    font-size: 30px; 
+  #titleHeader { 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    left: 0px;
+    font-size: 40px; 
   }
 
   nav {
     display: flex;
     justify-content:space-between;
-    top: 50px;
+    top: 40px;
     font-size: 17px;
   }
   
-  #dashboardLink, #homeLink, #logout{
+  #homeLink, #logout{
     margin-left: 30px;
   }
+
+  #dashboardLink{
+    margin-left: 55px;
+  }
+
   #mapRendered{
     width: 300px;
     position: relative;
@@ -862,6 +859,3 @@ font-size: 20px;
   }
 
 }
-
-
-
